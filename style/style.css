@@ -21,9 +21,12 @@ body {
         #030010,
         #64b5f6,
         #030010
-    );
+        );
     padding: 40px 60px;
     border-radius: 10px;
+    max-width: 90%; 
+    width: 500px; 
+    max-height: 800px;
 }
 
 .container h2 {
@@ -31,6 +34,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-align: center; /* Centraliza o texto */
 }
 
 .container .menu-time .time{
@@ -40,7 +44,6 @@ body {
     display: flex;
     align-items:flex-end;
     justify-content: center;
-
 }
 
 .reset{
@@ -75,8 +78,9 @@ body {
 }
 
 .game{
-    width: 430px;
-    height: 430px;
+    width: 100%; /* Largura total */
+    max-width: 430px; /* Largura máxima */
+    height: auto; /* Altura automática */
     display: flex;
     flex-wrap: wrap;
     background: #252525;
@@ -88,7 +92,7 @@ body {
 
 .item{
     position: relative;
-    width: 100px;
+    width: calc(25% - 10px);    
     height: 100px;
     display: flex;
     justify-content: center;
@@ -120,4 +124,28 @@ body {
 .boxOpen::after ,.item.boxOpen::after {
     transform: rotateY(180deg);
     transition: 0.25s;
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: calc(33.33% - 10px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: calc(50% - 10px); 
+    }
+
+    .container {
+        padding: 20px; 
+    }
+
+    .container h2 {
+        font-size: 2em; 
+    }
+
+    .reset, #start-button {
+        font-size: 1em; 
+    }
 }
