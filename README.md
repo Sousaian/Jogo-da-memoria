@@ -19,8 +19,4 @@ O objetivo do jogo é combinar todas as cartas de emojis o mais rápido possíve
 - **CSS3**: Estilização do jogo para torná-lo visualmente atraente.
 - **JavaScript**: Implementação da lógica do jogo e interatividade, como a lógica de correspondência de cartas e o cronômetro.
 
-## 📦 Como Rodar o Projeto
 
-1. Clone o repositório para a sua máquina local:
-   ```bash
-   git clone https://github.com/Sousaian/Jogo-da-memoria.git
